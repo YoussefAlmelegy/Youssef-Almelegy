@@ -1,0 +1,167 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --blue-color:blue;
+    --white-color:white;
+    --beige-color:beige;
+    --gray-color:rgb(179, 173, 173);
+
+}
+
+body{
+    font-family: sans-serif;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--beige-color);
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+#about{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#about div img {
+    width: 200px;
+    margin: 10px;
+    height: auto;
+    border-radius: 10px;
+}
+
+li{
+    display: inline-block;
+    margin: 5px;
+}
+
+li a{
+    text-decoration: none;
+    color: var(--blue-color);
+}
+
+h2, h3{
+    margin: 10px;
+
+}
+
+.social-icons{
+    margin: 10px;
+}
+.social-icons i{
+    color:var(--blue-color);
+    font-size: 20px;
+    margin: 5px;
+}
+
+footer p{
+    text-align: center;
+    background-color: var(--beige-color);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+@media(max-width: 480px) {
+    header{
+        flex-direction: column;
+    }
+    #about{
+        flex-direction: column;
+    }
+    nav ul{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .container{
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+}
+
+.button{
+    background-color:var(--blue-color);
+    color:var(--white-color);
+    outline: none;
+    border: none;
+    font-family: sans-serif;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+}  
+.button a{
+    color: var(--white-color);
+}
+#container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+#container a div{
+    background: var(--gray-color);
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+#container div{
+    background: var(--gray-color);
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    border-radius: 10px;
+}
+#container a {
+    color: black;
+}
+h4{
+    margin:10px 0;
+}
+a{
+    text-decoration: none;
+    color: var(--gray-color);
+}
+#p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+ol li{
+    display: inline;
+    margin-left: 150px;
+    
+}
+ol{
+    justify-content: stretch;
+    padding: 0em;
+}
+
+#projects h3, #skills h3{
+    text-align: center;
+}
+#contactus  ul{
+flex-direction: column;
+display: flex;
+}
+li{
+    margin: 10px;
+    
+}
+
+#contactus i{
+margin-left: 5px;
+}
+
